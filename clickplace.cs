@@ -39,6 +39,18 @@ public class clickplace : MonoBehaviour
         Instantiate(cloneObj, new Vector3(.1f, .62f), cloneObj.rotation);
         }
 
+        if(gameObject.name == "tomato") 
+        {
+        Instantiate(cloneObj, new Vector3(-.2f, .62f), cloneObj.rotation);
+        Instantiate(cloneObj, new Vector3(.2f, .62f), cloneObj.rotation);
+        }
+
+        if(gameObject.name == "pattie")
+        {
+        Instantiate(cloneObj, new Vector3(-.3f, .62f), cloneObj.rotation);
+        Instantiate(cloneObj, new Vector3(.3f, .62f), cloneObj.rotation);
+        }
+
         gameflow.plateValue += foodValue;
         Debug.Log(gameflow.plateValue + " " + gameflow.orderValue);
     }
