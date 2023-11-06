@@ -33,7 +33,7 @@ public class clickplace : MonoBehaviour
         Instantiate(cloneObj, new Vector3(0, .62f), cloneObj.rotation);
         }
 
-        if(gameObject.name == "Lettuc")
+        if(gameObject.name == "Lettuce")
         {
         Instantiate(cloneObj, new Vector3(-.1f, .62f), cloneObj.rotation);
         Instantiate(cloneObj, new Vector3(.1f, .62f), cloneObj.rotation);
