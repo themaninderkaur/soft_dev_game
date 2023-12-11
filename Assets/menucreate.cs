@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class menucreate : MonoBehaviour
 {
-    public GameObject clobeObj;
+    public GameObject cloneObj;
     public int foodValue;
 
     void Start()
