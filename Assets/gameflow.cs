@@ -46,42 +46,42 @@ public class gameflow : MonoBehaviour
         {
             if(orderValue[i] == 11001)
             {
-                currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[0]
+                    currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[0];
             }
             
             if(orderValue[i] == 11011)
             {
-                currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[1]
+                    currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[1];
             }
 
             if(orderValue[i] == 11101)
             {
-                currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[2]
+                    currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[2];
             }
 
             if(orderValue[i] == 11111)
             {
-                currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[3]
+                    currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[3];
             }
 
             if(orderValue[i] == 12001)
             {
-                currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[4]
+                    currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[4];
             }
 
             if(orderValue[i] == 12011)
             {
-                currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[5]
+                    currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[5];
             }
 
             if(orderValue[i] == 12101)
             {
-                currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[6]
+                    currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[6];
             }
 
             if(orderValue[i] == 12111)
             {
-                currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[7]
+                    currentPic[i].GetComponent<MeshRenderer>().material.mainTexture = orderPics[7];
             }
 
         }
