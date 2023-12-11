@@ -20,7 +20,7 @@ public class meat : MonoBehaviour
     {
         if(gameObject.name == "Cutlet")
         {
-            Instatiate(cloneObj, new Vector3(-3, -.1f), cloneObj.rotation);
+            Instantiate(cloneObj, new Vector3(-3, -.1f), cloneObj.rotation);
         }
     }
 }
