@@ -38,8 +38,13 @@ public class customer : MonoBehaviour
 
         gameflow.showOrder = -1;
         Debug.Log(gameflow.showOrder);
-        Instantiate(speechBubble, new Vector3(transform.position.x - 3.5f, transform.position.y + textYPos))
+        _ = Instantiate(speechBubble, new Vector3(x: transform.position.x - 3.5f, y: transform.position.y + textYPos));
 
+    }
+
+    private object Instantiate(GameObject speechBubble, Vector3 vector3)
+    {
+        throw new NotImplementedException();
     }
 
 }
