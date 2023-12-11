@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class clickplace : MonoBehaviour
+public class ClickPlace : MonoBehaviour
 {
     public Transform cloneObj;
     public int foodValue;
