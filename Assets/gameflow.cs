@@ -20,7 +20,7 @@ public class gameflow : MonoBehaviour
 
     public static float[] orderCost = { 1, 2.50f, 3.50f};
     public static int createdMenuItem;
-    public static int[] FullMenu = {0,0,0,0,0,0,0,0,0}
+    public static int[] FullMenu = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
     public static int menuIndex = 0;
     public static int showOrder = -10;
 
