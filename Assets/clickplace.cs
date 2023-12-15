@@ -7,12 +7,12 @@ public class ClickPlace : MonoBehaviour
     public Transform cloneObj;
     public int foodValue;
 
-    void Start()
+    private void Start()
     {
         
     }
 
-    void Update()
+    private void Update()
     {
         
     }
