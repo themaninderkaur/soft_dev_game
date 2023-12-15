@@ -9,7 +9,7 @@ public class customer : MonoBehaviour
     void Start()
     {
         GetComponent<Rigidbody>().velocity = new Vector3(0,0);
-        StartCoroutine(stopApproach());
+        StartCoroutine(StopApproach());
     }
 
     void Update()
@@ -20,7 +20,7 @@ public class customer : MonoBehaviour
         }
     }
 
-    IEnumerator stopApproach()
+    IEnumerator StopApproach()
     {
         yield return new WaitForSeconds(6.5f);
         GetComponent<Rigidbody>().velocity = new Vector3(0,0);
