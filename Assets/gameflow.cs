@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gameflow : MonoBehaviour
+public class Gameflow : MonoBehaviour
 {
     public static int[] orderValue = { 11111, 10001, 12001 };
     public static int[] plateValue = { 0, 0, 0 };
