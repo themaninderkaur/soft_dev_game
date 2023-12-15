@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class remove : MonoBehaviour
+public class Remove : MonoBehaviour
 {
     void Start()
     {
