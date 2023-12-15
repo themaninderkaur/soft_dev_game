@@ -16,9 +16,11 @@ public class buttons : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(gameObject.name == "Reset");
-        gameflow.emptyPlateNow = 0;
-
+        if(gameObject.name == "Reset")
+        {
+            gameflow.emptyPlateNow = 0;
+        }
+        
         if(gameObject.name == "Add to Menu")
         {
             gameflow.FullMenu[gameflow.menuIndex] = gameflow.createdMenuItem;
