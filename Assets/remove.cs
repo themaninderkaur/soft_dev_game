@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Remove : MonoBehaviour
 {
-    void Start()
+    private void Start()
     {
         
     }
 
-    void Update()
+    private void Update()
     {
         if((gameflow.emptyPlateNow > transform.position.x -.4f) && (gameflow.emptyPlateNow < transform.position.x + .4f))
         {
