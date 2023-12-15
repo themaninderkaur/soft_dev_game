@@ -6,13 +6,13 @@ public class customer : MonoBehaviour
 {
     public GameObject speechBubble;
     public float textYPos;
-    void Start()
+    private void Start()
     {
         GetComponent<Rigidbody>().velocity = new Vector3(0,0);
         StartCoroutine(StopApproach());
     }
 
-    void Update()
+    private void Update()
     {
         if((transform.position.x > gameflow.emptyPlateNow -1) && (transform.position.x < gameflow.emptyPlateNow + 1))
         {
