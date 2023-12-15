@@ -106,17 +106,26 @@ public class gameflow : MonoBehaviour
         plateSelector.transform.position = new Vector3(plateNum, 0);
     }
 
-    IEnumerator customerSpawn()
+    private IEnumerator CustomerSpawn()
     {
-        yield return new WaitForSeconds(.5f);
-        if(customers[0] == 1)
-        {
-            Instantiate(homme, homme.position, homme.rotation);
-        }
-        yield return new WaitForSeconds(2);
-        if(customers[1] == 1)
-        {
-            Instantiate(femme, femme.position, femme.rotation);
+        get {
+            yield return new WaitForSeconds(.5f);
+            if(customers[0] == 1)
+            {
+                Instantiate(homme, homme.position, homme.rotation);
+            }
+            yield return new WaitForSeconds(2);
+            if(customers[1] == 1)
+            {
+                Instantiate(femme, femme.position, femme.rotation);
+            }
         }
     }
+    
+    //debug 
+    private string GetDebuggerDisplay() 
+    {
+        return ToString();
+    }
+    
 }
