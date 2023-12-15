@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class gameflow : MonoBehaviour
 {
-    public static int[] orderValue = {11111, 10001, 12001};
-    public static int[] plateValue = {0, 0, 0};
-    public static float[] orderTimer = {60, 60, 60};
+    public static int[] orderValue = { 11111, 10001, 12001 };
+    public static int[] plateValue = { 0, 0, 0 };
+    public static float[] orderTimer = { 60, 60, 60 };
 
     public static int plateNum = 0;
     public static float plateXPos = 0;
@@ -29,7 +29,7 @@ public class gameflow : MonoBehaviour
     public Trasform boy;
     public Trasform girl;
 
-    public static int[] customers = {0,0,0,0,0};
+    public static int[] customers = { 0, 0, 0, 0, 0 };
 
 
     void Start()
