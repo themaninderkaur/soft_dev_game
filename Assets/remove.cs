@@ -9,6 +9,7 @@ public class Remove : MonoBehaviour
         
     }
 
+    /*remove the plate's contents if the user wantys to restart on their plate/meal*/
     private void Update()
     {
         if((gameflow.emptyPlateNow > transform.position.x -.4f) && (gameflow.emptyPlateNow < transform.position.x + .4f))
