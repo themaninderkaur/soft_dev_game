@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class buttons : MonoBehaviour
 {
+
+    /*Buttons.cs main objective is to allow the buttons within the game menu to be usable, allowing reset,
+    new menu items to be added, or a start of a new day.*/
     void Start()
     {
         
@@ -14,6 +17,11 @@ public class buttons : MonoBehaviour
 
     }
 
+    /* When the mouse is pressed: if on the reset button, the plate with reset, allowing for gamer to 
+    start a new meal if they messed up. If they press Add to Menu, the selected ingredient within the 
+    catalog will be added to the menu and allows for customers to pick. If the user presses Start Day,
+    a new day will be noted a all new cahnges within the restraunt, interactions with customers, and 
+    meals created will be noted.*/
     private void OnMouseDown()
     {
         if(gameObject.name == "Reset")
