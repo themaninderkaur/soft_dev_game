@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Gameflow : MonoBehaviour
 {
+    /*the gameflow file brings all the other files
+    together and flows the game togather, as the name suggests.
+    Below are all the objects, ints, etc. that are instantiated.
+    From orderValues, to what order, to customers. */
+    
     public static int[] orderValue = { 11111, 10001, 12001 };
     public static int[] plateValue = { 0, 0, 0 };
     public static float[] orderTimer = { 60, 60, 60 };
@@ -31,12 +36,16 @@ public class Gameflow : MonoBehaviour
 
     public static int[] customers = { 0, 0, 0, 0, 0 };
 
-
+    /*Before program begins, the customer is spawned.*/
     void Start()
     {
         StartCoroutine(customerSpawn());
     }
 
+    /*based on whatever orderValue the customer is assigned, the speechbubble
+    that comes with each customer spawns a picture of that order inn their speechbubble.
+    After each customer order is done, the values assigned to the plateNum, timer, 
+    etc. is reset.*/
     void Update()
     {
         if(gameflow.showOrder == -1)
@@ -103,9 +112,11 @@ public class Gameflow : MonoBehaviour
         orderTimer[1] -= Time.deltaTime;
         orderTimer[2] -= Time.deltaTime;
 
-        plateSelector.transform.position = new Vector3(plateNum, 0);
+        plateSelector.transform.position = new Vector2(plateNum, 0);
     }
 
+    /*Based on whatever the customer lineup is, this is how each of the
+    customers are spawned in the void Start().*/
     private IEnumerator CustomerSpawn()
     {
         get {
@@ -122,7 +133,7 @@ public class Gameflow : MonoBehaviour
         }
     }
     
-    //debug 
+    /*debug*/ 
     private string GetDebuggerDisplay() 
     {
         return ToString();
