@@ -19,6 +19,7 @@ public class menucreate : MonoBehaviour
 
     void Update()
     {
+        //if emptyPlateNow = 0, object needs to be renamed 
         if (gameflow.emptyPlateNow == 0)
         {
             statText.GetComponent<TextMeshPro>().text = statText.gameObject.name+":";
