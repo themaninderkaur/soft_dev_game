@@ -40,6 +40,11 @@ public class ClickPlace : MonoBehaviour
             Instantiate(cloneObj, new Vector2(gameflow.plateXPos, .62f), cloneObj.rotation);
         }
 
+         if(gameObject.name == "patty")
+        {
+            Instantiate(cloneObj, new Vector2(gameflow.plateXPos, .62f), cloneObj.rotation);
+        }
+
         if(gameObject.name == "Lettuce")
         {
             Instantiate(cloneObj, new Vector2(gameflow.plateXPos -.1f, .62f), cloneObj.rotation);
