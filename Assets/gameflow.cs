@@ -34,6 +34,7 @@ public class Gameflow : MonoBehaviour
     public Trasform boy;
     public Trasform girl;
 
+    //represents what character is being played
     public static int[] customers = { 0, 0, 0, 0, 0 };
 
     /*Before program begins, the customer is spawned.*/
