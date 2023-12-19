@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class menucreate : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class menucreate : MonoBehaviour
     of any menu item, while the foodValue will document how much food will allow new customers*/
     public GameObject cloneObj;
     public int foodValue;
+    public TextMeshPro statText;
 
     void Start()
     {
@@ -17,7 +19,10 @@ public class menucreate : MonoBehaviour
 
     void Update()
     {
-
+        if (gameflow.emptyPlateNow == 0)
+        {
+            statText.GetComponent<TextMeshPro>().text = statText.gameObject.name+":";
+        }
     }
 
     /* When the mouse is pressed, whatever menu item is pressed in added onto the foodValue int. 
@@ -27,7 +32,6 @@ public class menucreate : MonoBehaviour
     {
         gameflow.createdMenuItem += foodValue;
 
-        // 
         if(foodValue == 1000)
         {
             Debug.Log("Man unlocked");
