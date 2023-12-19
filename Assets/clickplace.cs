@@ -52,6 +52,7 @@ public class ClickPlace : MonoBehaviour
         }
 
         gameflow.plateValue[gameflow.plateNum] += foodValue;
+        //displays plate value and order value
         Debug.Log(gameflow.plateValue[gameflow.plateNum] + " " + gameflow.orderValue[gameflow.plateNum]);
     }
 }
