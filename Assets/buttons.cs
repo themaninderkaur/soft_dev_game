@@ -51,11 +51,13 @@ public class buttons : MonoBehaviour
             SceneManager.LoadScene("food");
         }
 
-        IEnumerator platereset()
-        {
-            yield return new WaitForSeconds(.2f);
-            gameflow.emptyPlateNow = -5;
-        }
+    
+    }
+    
+    IEnumerator platereset()
+    {
+        yield return new WaitForSeconds(.2f);
+        gameflow.emptyPlateNow = -5;
     }
 
 }
