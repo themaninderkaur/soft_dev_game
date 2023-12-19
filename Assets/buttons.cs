@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class buttons : MonoBehaviour
 {
 
     /*Buttons.cs main objective is to allow the buttons within the game menu to be usable, allowing reset,
     new menu items to be added, or a start of a new day.*/
+
+    public textMeshProUGUI enteredName;
+    
     void Start()
     {
         
@@ -37,6 +41,9 @@ public class buttons : MonoBehaviour
             gameflow.menuIndex++;
             gameflow.createdMenuItem = 0;
             StartCoroutine(platereset());
+            //Debug.log(enteredName.text);
+
+            menuflow.menuMealValue[0] = enteredName.text;
         }
 
         if(gameObject.name == "Start Day")
